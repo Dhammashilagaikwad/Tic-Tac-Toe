@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Body-background-color</title>
+    <style>
+        body{
+            background-image: url("https://i.pinimg.com/564x/c6/38/82/c63882d0c2ee829d939b5da29978b82b.jpg");
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .gameDiv
+        {
+            display: flex;
+            flex-wrap:wrap;
+           visibility: hidden;
+            margin-left: 150px;
+        }
+        .container
+        {
+            border:2px solid aqua;
+            display: flex;
+            flex-wrap:wrap;
+            width:318px;
+            height:315px;
+            justify-content: center;
+            align-items: center;
+            margin-left: 300px;
+               
+        }
+        .div{
+            color: white;
+            border:2px solid aqua;
+            display: flex;
+            font-size: 30px;
+            width:102px;
+            height:102px;
+            justify-content: center;
+            align-items: center;
+        }
+        .form{
+            text-align: center;
+            margin-left: 935px;
+            color:aqua ;
+            margin-top: -100px;
+            font-size: 20px;
+        }
+        table, td, th {  
+             border: 1px solid #ddd;
+             text-align: left;
+        }       
+
+        table {
+             border-collapse: collapse;
+             width: 100%;
+        }
+
+        th, td {
+             padding: 10px;
+             width: 100%;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; margin-top: 100px; color:aqua ; font-size: 60px;">TIC TAC TOE</h1>
+    <div class="content">
+        <div class="form">
+            Player 1: <input type="text" id="user1" style="width: 200px ;  padding: 9px;"><br><br>
+            Player 2: <input type="text" id="user2" style="width: 200px ;  padding: 9px;"><br><br>
+            <input type ="button" id="start" value="Start Game" style="width: 250px ;  padding: 10px; background-color: aqua;">
+        </div>
+        <div class="gameDiv">
+            
+             
+            <div class="container">
+                <div class="div" id="0"></div>
+                <div class="div" id="1"></div>
+                <div class="div" id="2"></div>
+                <div class="div" id="3"></div>
+                <div class="div" id="4"></div>
+                <div class="div" id="5"></div>
+                <div class="div" id="6"></div>
+                <div class="div" id="7"></div>
+                <div class="div" id="8"></div>
+            </div>
+            <div class=last style="margin-left: 100px; margin-top: 50px; ">
+                <input type="button" id="reset" value ="Reset" style="width: 130px ;  padding: 10px; background-color: aqua;" >
+                <input type="button" onclick = "location.reload()" value ="Restart" style="width: 130px ;  padding: 10px; background-color: aqua;">
+            </div>
+
+            <div class ="score" style="color: aqua; margin-top: -200px; margin-left: 750px; ">
+                <table >
+                   <tr >
+                    <th id="name1"></th>
+                    <th id="name2"></th>
+                   </tr>
+                   <br>
+                   <tr>
+                    <td id="score1"></td>
+                    <td id="score2"></td>
+                   </tr>
+                </table>
+            
+             </div>  
+
+        </div>
+    </div>
+   
+  <script src="js/index.js"></script>
+</body>
+</html>
