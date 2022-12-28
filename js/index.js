@@ -57,13 +57,13 @@ function getScore(x,y,z)
     if(flag)
     {
       
-      alert(player2 , " Winner");
+      alert(player2+" Winner");
         player2Count++;
 
     }
     else
     {
-        alert(player1 , " Winner");
+        alert(player1 +" Winner");
         player1Count++;
     }
 
